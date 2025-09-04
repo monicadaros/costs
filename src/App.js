@@ -4,17 +4,13 @@ import Contato from './components/pages/Contato'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
 import Container from './components/layout/Container'
+import Footer from './components/layout/Footer'
+import Navbar from './components/layout/Navbar'
 
 function App() {
   return (
 <Router>
-  <ul>
-    <Link to='/'>Home</Link>
-    <Link to='/contato'>Contato</Link>
-    <Link to='/company'>Empresa</Link>
-    <Link to='/newproject'>Novo Projeto</Link>
-
-  </ul>
+  <Navbar />
   <Container customClass="min-height">
     <Routes>
       <Route exatc path='/' element={<Home/>}/>
@@ -23,8 +19,9 @@ function App() {
       <Route path='/newproject' element={<NewProject/>}/>
     </Routes>
   </Container>
+  <Footer/>
 </Router>
-  );
+ );
 }
 
 export default App;
