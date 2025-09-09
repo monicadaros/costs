@@ -1,5 +1,5 @@
 import styles from './ProjectForm.module.css';
-import Input from '../form/Input';
+import Input from '../form/Entrada';
 
 
 function ProjectForm() {
