@@ -8,13 +8,11 @@ function Message({type, msg}) {
 useEffect(() => {
     if (!msg) {
       setVisible(false);
-      console.log('1');
       return;
     }
     setVisible(true);
     const timer = setTimeout(() => {
       setVisible(false);
-      console.log('2');
     }, 3000);
 
     return () => clearTimeout(timer);
